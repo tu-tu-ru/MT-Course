@@ -44,3 +44,7 @@ hist(y,col="red")
 ##----------------##
 pairs(~co2data$CO2+co2data$HDI+co2data$PR+co2data$CL+co2data$GDPP++co2data$ICT++co2data$Education+co2data$Stability+co2data$Resistance)
 pairs(~co2data$CO2+co2data$Education)
+
+## Adding residual plot
+co2_residual <- resid(All_lm)
+plot(co2data$CO2,co2_residual,ylab = "residual", xlab = "CO2",main = "CO2 residual")
