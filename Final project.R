@@ -48,3 +48,4 @@ pairs(~co2data$CO2+co2data$Education)
 ## Adding residual plot
 co2_residual <- resid(All_lm)
 plot(co2data$CO2,co2_residual,ylab = "residual", xlab = "CO2",main = "CO2 residual")
+abline(40,0)
