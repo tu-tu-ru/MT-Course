@@ -1,0 +1,133 @@
+> ICT_lm<-lm(CO2~ICT,data=co2data)
+> summary(ICT_lm)
+
+Call:
+lm(formula = CO2 ~ ICT, data = co2data)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-8.956 -2.937 -1.552  0.720 67.939 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1.731209   0.179449   9.647   <2e-16 ***
+ICT         0.032971   0.001282  25.722   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.452 on 2918 degrees of freedom
+Multiple R-squared:  0.1848,	Adjusted R-squared:  0.1845 
+F-statistic: 661.6 on 1 and 2918 DF,  p-value: < 2.2e-16
+
+> ##----------------##
+> ICT_lm<-lm(CO2~ICT,data=co2data)
+> summary(ICT_and_Edu_lm)
+Error in summary(ICT_and_Edu_lm) : object 'ICT_and_Edu_lm' not found
+> ICT_and_Edu_lm<-lm(ICT~Education,data=co2data)
+> summary(ICT_and_Edu_lm)
+
+Call:
+lm(formula = ICT ~ Education, data = co2data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-130.290  -51.145    5.015   45.522  197.774 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -168.26635    4.47087  -37.64   <2e-16 ***
+Education      2.05379    0.03258   63.03   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 60.63 on 2918 degrees of freedom
+Multiple R-squared:  0.5765,	Adjusted R-squared:  0.5764 
+F-statistic:  3973 on 1 and 2918 DF,  p-value: < 2.2e-16
+
+> ##----------------##
+> ICT_CL_lm<-lm(ICT~CL,data=co2data)
+> summary(ICT_CL_lm)
+
+Call:
+lm(formula = ICT ~ CL, data = co2data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-153.05  -61.60  -11.80   57.89  285.07 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   5.6709     3.3936   1.671   0.0948 .  
+CL           27.2046     0.8406  32.361   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 79.93 on 2918 degrees of freedom
+Multiple R-squared:  0.2641,	Adjusted R-squared:  0.2639 
+F-statistic:  1047 on 1 and 2918 DF,  p-value: < 2.2e-16
+
+> ##----------------##
+> ICT_PR_lm<-lm(ICT~PR,data=co2data)
+> summary(ICT_PR_lm)
+
+Call:
+lm(formula = ICT ~ PR, data = co2data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-142.87  -67.15  -17.18   62.08  281.50 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  36.4529     3.0545   11.93   <2e-16 ***
+PR           18.8620     0.7286   25.89   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 84.02 on 2918 degrees of freedom
+Multiple R-squared:  0.1868,	Adjusted R-squared:  0.1865 
+F-statistic: 670.1 on 1 and 2918 DF,  p-value: < 2.2e-16
+
+> ##----------------##
+> CO2_Education_lm<-lm(CO2~Education,data=co2data)
+> summary(CO2_Education_lm)
+
+Call:
+lm(formula = CO2 ~ Education, data = co2data)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.866 -3.020 -1.046  0.904 62.539 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -10.510230   0.433158  -24.26   <2e-16 ***
+Education     0.118112   0.003157   37.41   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.874 on 2918 degrees of freedom
+Multiple R-squared:  0.3242,	Adjusted R-squared:  0.324 
+F-statistic:  1400 on 1 and 2918 DF,  p-value: < 2.2e-16
+
+> ##----------------##
+> CO2_HDI_lm<-lm(CO2~HDI,data=co2data)
+> summary(CO2_HDI_lm)
+
+Call:
+lm(formula = CO2 ~ HDI, data = co2data)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.770 -3.027 -1.079  0.874 62.580 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -10.2376     0.4319  -23.70   <2e-16 ***
+HDI          23.2299     0.6297   36.89   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.901 on 2918 degrees of freedom
+Multiple R-squared:  0.3181,	Adjusted R-squared:  0.3178 
+F-statistic:  1361 on 1 and 2918 DF,  p-value: < 2.2e-16
