@@ -33,3 +33,14 @@ plot(CO2~HDI,data=co2data,pch=16)
 summary(CO2_HDI_lm)
 abline(a=-10.2367,b=23.2306,col="red",lwd=2)
 
+##----------------##
+All_lm <- lm(CO2~HDI+PR+CL+Education+GDPP+Stability+Resistance+ICT,data=co2data)
+summary(All_lm)
+
+plot(CO2~ICT,data = co2data,pch=16)
+y<-co2data$CO2
+hist(y,col="red")
+
+##----------------##
+pairs(~co2data$CO2+co2data$HDI+co2data$PR+co2data$CL+co2data$GDPP++co2data$ICT++co2data$Education+co2data$Stability+co2data$Resistance)
+pairs(~co2data$CO2+co2data$Education)
